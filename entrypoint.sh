@@ -25,7 +25,7 @@ check_if_meta_yaml_file_exists() {
 
 build_package(){
     # Build for Linux
-    conda build -c conda-forge -c pytorch -c fcakyon -c districtdatalabs --output-folder . .
+    conda build -c SimpleITK -c siboles -c conda-forge -c pytorch -c fcakyon -c districtdatalabs --output-folder . .
 
     # Convert to other platforms: OSX, WIN
     if [[ $INPUT_PLATFORMS == *"osx"* ]]; then
