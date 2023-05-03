@@ -18,7 +18,7 @@ LABEL "maintainer"="Fatih C Akyon"
 
 RUN apt-get update
 # to fix: import cv2 > ImportError: libGL.so.1: cannot open shared object file: No such file or directory
-RUN apt-get install -y libgl1-mesa-dev
+RUN apt-get install -y libgl1-mesa-dev git
 
 # to fix: import cv2 > ImportError: libjasper.so.1: cannot open shared object file: No such file or directory
 RUN apt-get install -y libjasper1
